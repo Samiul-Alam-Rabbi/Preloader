@@ -1,0 +1,51 @@
+body{
+    background: #000;
+}
+#preloader{
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+#preloader:before{
+    content: "";
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border: 6px solid rebeccapurple;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border-top-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: animate-preloader 1s linear infinite;
+    -webkit-animation: animate-preloader 1s linear infinite;
+}
+@keyframes animate-preloader{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
