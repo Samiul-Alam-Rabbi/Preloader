@@ -30,8 +30,8 @@ h1{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    animation: animate-preloader 1s linear infinite;
-    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 10s linear infinite;
+    -webkit-animation: animate-preloader 10s linear infinite;
 }
 @keyframes animate-preloader{
     0%{
